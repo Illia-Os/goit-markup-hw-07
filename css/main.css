@@ -73,8 +73,7 @@ img {
 .logo {
   margin-right: 93px;
 }
-
-.studio-text {
+.logo__studio-text {
   font-family: "raleway", sans-serif;
   font-size: 26px;
   line-height: 1.1923076923;
@@ -87,7 +86,7 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
 }
-.studio-text__web-item {
+.logo__text-web {
   color: #2196f3;
 }
 
