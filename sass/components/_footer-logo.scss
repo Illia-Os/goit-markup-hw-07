@@ -1,0 +1,23 @@
+.logo-address {
+  margin-right: 70px;
+  width: 231px;
+
+  &__logo-footer {
+    font-family: 'raleway', sans-serif;
+    font-size: 26px;
+    display: flex;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.studio-logo-footer {
+  color: $white-color;
+
+  &__web-logo {
+  color: $blue-color;
+}
+}
+

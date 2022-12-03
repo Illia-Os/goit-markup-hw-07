@@ -1,0 +1,9 @@
+.set-footer {
+  background-color: $gray-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container-footer {
+    display: flex;
+  }
+}

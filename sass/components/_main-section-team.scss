@@ -1,0 +1,53 @@
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $white-background-team-color;
+  color: $black-text-color;
+
+  &__list-team {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__item-team {
+    display: block;
+    text-align: center;
+    margin: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-shadow: $card-shadow-team;
+    border-radius: 0px 0px 4px 4px;
+    background-color: $white-color;
+  }
+
+  &__paragraph-team {
+    color: $gray-color;
+  }
+
+  &__team-contacts {
+    display: inline-flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  &__icon-size {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    fill: $gray-team-contacts-color;
+    border-radius: 50%;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon-size:hover,
+  &__icon-size:focus {
+    background-color: $blue-color;
+    fill: $white-color;
+  }
+}

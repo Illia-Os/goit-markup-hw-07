@@ -1,0 +1,31 @@
+.section-company {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.companies {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+
+  .companies__icon-styles {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: $gray-team-contacts-color;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .companies__icon-styles:hover,
+  .companies__icon-styles:focus {
+    border: 1px solid $blue-color;
+    fill: $blue-color;
+  }
+}

@@ -1,0 +1,53 @@
+// Settings
+@import './base/variables';
+@import './base/base';
+@import './utils/visually-hidden';
+
+// header
+@import './components/header';
+@import './components/header-logo';
+@import './components/header-nav';
+@import './components/header-contact';
+
+// main
+
+// section hero
+@import './components/main-section-hero';
+
+// title
+@import './components/main-title';
+
+// section features
+@import './components/main-section-features';
+@import './components/main-list-feature';
+
+// section work
+@import './components/main-section-work';
+
+// section team
+@import './components/main-section-team';
+
+// section company
+@import './components/main-section-company';
+
+// modal
+@import './components/modal';
+@import './components/modal-form';
+@import './components/modal-button';
+
+
+// section portfolio
+@import './components/main-filter-portfolio';
+@import './components/main-portfolio';
+
+// footer
+@import './components/footer';
+@import './components/footer-logo';
+@import './components/footer-contact';
+@import './components/footer-links';
+@import './components/footer-mailing-list';
+
+
+
+
+

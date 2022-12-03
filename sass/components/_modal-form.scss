@@ -1,0 +1,148 @@
+.form {
+  &__text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+
+  &__item-form {
+    position: relative;
+    margin-bottom: 10px;
+
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: $gray-color;
+  }
+
+  &__item-input {
+    margin-top: 4px;
+  }
+
+  &__label {
+    margin-top: 4px;
+  }
+
+  &__comment-input {
+    margin-bottom: 20px;
+  }
+
+  &__comment-text {
+    margin-top: 4px;
+    outline: none;
+    resize: none;
+    height: 135px;
+    width: 444px;
+    padding: 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
+
+  &__item-input {
+    height: 40px;
+    width: 444px;
+    padding-left: 42px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    outline: none;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__policy-form {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 30px;
+
+    height: 9px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link-policy {
+    color: $blue-color;
+  }
+
+  &__checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+  }
+
+  &__icon-policy {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 2%;
+
+    border-radius: 4px;
+    border: 2px solid black;
+    background-color: $white-color;
+  }
+
+  &__checkbox:checked + .form__icon-policy {
+    border-radius: 4px;
+    border: 2px solid $blue-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $blue-color;
+    background-image: url(../images/check.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+
+  &__comment-text {
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item-form:focus-within .form__icon {
+    fill: $blue-color;
+  }
+
+  &__item-input:hover,
+  &__item-input:focus {
+    fill: $blue-color;
+    border: 1px solid $blue-color;
+  }
+
+  &__item-form:hover .form__icon,
+  &__item-form:focus .form__icon {
+    fill: $blue-color;
+  }
+
+  &__item-input:focus-within {
+    border: 1px solid $blue-color;
+  }
+
+  &__comment-text:focus-within {
+    border: 1px solid $blue-color;
+    border-radius: 4px;
+  }
+
+  &__comment-text:hover,
+  &__comment-text:focus {
+    border: 1px solid $blue-color;
+  }
+}
