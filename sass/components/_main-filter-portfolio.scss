@@ -23,8 +23,8 @@
     border: 0;
     cursor: pointer;
 
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow $cubic-bezier,
+      color $cubic-bezier, background-color $cubic-bezier;
   }
 
   &__button-filter:not(:last-child) {
